@@ -10,8 +10,8 @@ x = df.iloc[:, 0:-1] # Input Variables (Regressors)
 y = df.iloc[:, -1] # Target Variable
 x_train = x
 y_train = y
-x_test = x.iloc[0:1]
-y_test = y.iloc[0:1]
+x_test = x.iloc[:]
+y_test = y.iloc[:]
 # Fit the Model
 clf = LogisticRegression(random_state=42, solver='lbfgs', multi_class='auto').fit(x_train, y_train)
 # K-fold Cross Validation
