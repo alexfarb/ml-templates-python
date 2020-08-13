@@ -5,7 +5,7 @@ import numpy as np
 # import graphviz
 
 # Read the dataset and store in a Pandas DataFrame
-df = pd.read_csv("C:\\repos\\dataset\\connekt\\regressao_2.csv")
+df = pd.read_csv(datapath)
 x = df.iloc[:, 0:-1] # Input Variables (Regressors)
 y = df.iloc[:, -1] # Target Variable
 x_train = x

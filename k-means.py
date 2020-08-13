@@ -7,9 +7,9 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Read the dataset and store in a Pandas DataFrame
-df = pd.read_csv("C:\\repos\\dataset\\connekt\\agrupamento.csv")
+df = pd.read_csv(datapath)
 # Read Centroids database
-dfc = pd.read_csv("C:\\repos\\dataset\\connekt\\centroides_iniciais.csv")
+dfc = pd.read_csv(datapath)
 nclusters = 16
 init_centroids = dfc.iloc[0:nclusters, :]
 # Fit the Model

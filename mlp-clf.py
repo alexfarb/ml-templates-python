@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 import numpy as np
 
 # Read the dataset and store in a Pandas DataFrame
-df = pd.read_csv("C:\\repos\\dataset\\connekt\\classificacao_2.csv")
+df = pd.read_csv(datapath)
 x = df.iloc[:, 0:-1] # Input Variables
 y = df.iloc[:, -1] # Target Variable
 x_train = x

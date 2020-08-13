@@ -4,7 +4,7 @@ from sklearn.model_selection import cross_val_score
 import numpy as np
 
 # Read the dataset and store in a Pandas DataFrame
-df = pd.read_csv("C:\\repos\\dataset\\connekt\\regressao_1.csv")
+df = pd.read_csv(datapath)
 x = df.iloc[:, 0:-1] # Input Variables
 y = df.iloc[:, -1] # Target Variable
 x_train = x
